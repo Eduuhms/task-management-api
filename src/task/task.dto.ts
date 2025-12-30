@@ -1,7 +1,12 @@
 export class TaskDto {
-    id: String;
-    title: String;
-    description: String;
-    status: String;
+    id: string;
+    title: string;
+    description: string;
+    status: string;
     expirationDate: Date;
+}
+
+export interface FindAllParameters {
+    title: string;
+    status: string;
 }
